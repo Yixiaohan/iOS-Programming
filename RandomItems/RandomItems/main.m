@@ -39,19 +39,19 @@ int main(int argc, const char * argv[]) {
         
         //自定义类
         BNRItem *item = [[BNRItem alloc] init];
-        NSLog(@"%@  %@  %@  %d", [item itemName], [item seriaNumber], [item dateCreated], [item valueInDollars]);
+        NSLog(@"%@  %@  %@  %d", [item itemName], [item serialNumber], [item dateCreated], [item valueInDollars]);
         
         //setter 设置值
         [item setItemName:@"Red Sofa"]; 
         [item setSerialNumber:@"A1B2C"];
         [item setValueInDollars:100];
-        NSLog(@"%@  %@  %@  %d", [item itemName], [item seriaNumber], [item dateCreated], [item valueInDollars]);
+        NSLog(@"%@  %@  %@  %d", [item itemName], [item serialNumber], [item dateCreated], [item valueInDollars]);
         
         //使用点语法 dot syntax，也叫 dot notation
         item.itemName = @"New Red Sofa";
         item.serialNumber = @"New A1B2C";
         item.valueInDollars = 200;
-        NSLog(@"%@  %@  %@  %d", item.itemName, item.seriaNumber, item .dateCreated, item.valueInDollars);
+        NSLog(@"%@  %@  %@  %d", item.itemName, item.serialNumber, item .dateCreated, item.valueInDollars);
         
         //调用 父类的 description 方法
         NSLog(@"%@", item);
@@ -88,7 +88,6 @@ int main(int argc, const char * argv[]) {
         id lastObj = [itemsMuta lastObject];
         NSLog(@"%@", lastObj);
         
-        NSLog(@"%@", mutableList[11]);
 
     }
     return 0;
